@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Converta — Consultoria em Recursos Humanos & Advocacia</title>
+  <meta name="description" content="Converta — Consultoria especializada em Recursos Humanos e Advocacia em Angola. Transformamos Pessoas e Números em Resultados Reais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-logo">CONVER<span>TA</span></div>
+  <div class="loader-bar"></div>
+</div>
+
+<header id="header">
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo-converta.png" alt="Converta" class="nav-logo-img" loading="eager" fetchpriority="high">
+  </a>
+  <nav id="desktop-nav">
+    <a class="nav-link active" href="index.html">Início</a>
+    <a class="nav-link" href="servicos.html">Serviços</a>
+    <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+    <a class="nav-link" href="contactos.html">Contactos</a>
+    <a class="nav-cta" href="contactos.html">Falar Connosco</a>
+  </nav>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a class="nav-link active" href="index.html">Início</a>
+  <a class="nav-link" href="servicos.html">Serviços</a>
+  <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+  <a class="nav-link" href="contactos.html">Contactos</a>
+  <a class="nav-cta" href="contactos.html">Falar Connosco</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+<h1 class="hero-title reveal delay-1">
+        Transformamos <em>Pessoas e Números</em> em Resultados Reais.
+      </h1>
+      <p class="hero-desc reveal delay-2">
+        A Converta é a sua parceira estratégica em Recursos Humanos e Advocacia. Combinamos expertise jurídica com gestão de pessoas para levar a sua empresa ao próximo nível.
+      </p>
+      <div class="hero-actions reveal delay-3">
+        <a href="contactos.html" class="btn btn-primary">
+          Consulta Gratuita
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+        <a href="servicos.html" class="btn btn-outline">Ver Serviços</a>
+      </div>
+    </div>
+    <div class="hero-right reveal-right delay-2">
+      <div class="hero-stats-grid">
+        <div class="hero-stat-card featured">
+          <div class="stat-num">10<span style="font-size:1.5rem;color:var(--gold-light);">+</span></div>
+          <div class="stat-label">Anos de Experiência Combinada</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="stat-num">200<span style="font-size:1.2rem">+</span></div>
+          <div class="stat-label">Clientes Satisfeitos</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="stat-num">98<span style="font-size:1.2rem">%</span></div>
+          <div class="stat-label">Taxa de Satisfação</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="stat-num">50<span style="font-size:1.2rem">+</span></div>
+          <div class="stat-label">Processos Concluídos</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="stat-num">15<span style="font-size:1.2rem">+</span></div>
+          <div class="stat-label">Sectores Atendidos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll" onclick="scrollToNext()">
+    <div class="scroll-line"></div>
+    <span>Explorar</span>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="section services-preview">
+  <div class="container">
+    <div class="section-label reveal">Os Nossos Serviços</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end">
+      <h2 class="section-title reveal delay-1">Uma Abordagem <em>Integrada</em> ao seu Negócio</h2>
+      <div>
+        <p class="section-sub reveal delay-2">Oferecemos soluções completas que integram a gestão de capital humano com o suporte jurídico necessário para o crescimento sustentável da sua organização.</p>
+        <div class="gold-rule reveal delay-3"></div>
+      </div>
+    </div>
+    <div class="grid-3">
+      <a href="servicos.html" class="service-card reveal delay-1">
+        <div class="service-icon">👥</div>
+        <div class="service-card-title">Gestão de Recursos Humanos</div>
+        <p class="service-card-desc">Recrutamento, selecção, avaliação de desempenho e desenvolvimento organizacional. Colocamos as pessoas certas nos lugares certos.</p>
+        <div class="service-card-link">Saber Mais →</div>
+      </a>
+      <a href="servicos.html" class="service-card reveal delay-2">
+        <div class="service-icon">⚖️</div>
+        <div class="service-card-title">Advocacia & Consultoria Jurídica</div>
+        <p class="service-card-desc">Suporte jurídico especializado em direito laboral, societário e contratual. Protegemos os seus interesses com rigor e ética.</p>
+        <div class="service-card-link">Saber Mais →</div>
+      </a>
+      <a href="servicos.html" class="service-card reveal delay-3">
+        <div class="service-icon">📊</div>
+        <div class="service-card-title">Consultoria Estratégica</div>
+        <p class="service-card-desc">Análise organizacional, planeamento estratégico de RH e conformidade legal. Transformamos dados em decisões inteligentes.</p>
+        <div class="service-card-link">Saber Mais →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section class="section about-preview">
+  <div class="container">
+    <div class="about-preview-inner">
+      <div class="about-visual reveal-left">
+        <div class="about-visual-main">
+          <img src="images/assets/1.jpg" alt="Equipa Converta — Profissionais em RH e Advocacia" class="about-visual-img">
+        </div>
+        <div class="about-visual-accent">
+          <div class="about-visual-num">10<span>+</span></div>
+          <div class="about-visual-label">Anos de Excelência</div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="section-label reveal">Quem Somos</div>
+        <h2 class="section-title reveal delay-1">Uma Equipa Comprometida com os seus <em>Resultados</em></h2>
+        <p class="section-sub reveal delay-2">A Converta nasceu da visão de criar uma consultoria que entende que as pessoas são o activo mais valioso de qualquer organização — e que os processos jurídicos devem servir para as proteger e valorizar.</p>
+        <div class="gold-rule reveal delay-2"></div>
+        <div class="values-list">
+          <div class="value-item reveal delay-2">
+            <div class="value-dot"></div>
+            <div>
+              <div class="value-title">Excelência sem Compromisso</div>
+              <div class="value-desc">Cada solução é desenvolvida com o mais alto padrão de qualidade técnica e ética profissional.</div>
+            </div>
+          </div>
+          <div class="value-item reveal delay-3">
+            <div class="value-dot"></div>
+            <div>
+              <div class="value-title">Abordagem Personalizada</div>
+              <div class="value-desc">Cada cliente é único. Desenvolvemos estratégias sob medida para os seus desafios específicos.</div>
+            </div>
+          </div>
+          <div class="value-item reveal delay-4">
+            <div class="value-dot"></div>
+            <div>
+              <div class="value-title">Parceria de Longo Prazo</div>
+              <div class="value-desc">Não somos apenas prestadores de serviços — somos parceiros comprometidos com o seu sucesso contínuo.</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:36px" class="reveal delay-5">
+          <a href="quem-somos.html" class="btn btn-navy">Conhecer a Nossa História</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="testimonials-header">
+      <div class="section-label reveal">Depoimentos</div>
+      <h2 class="section-title light reveal delay-1">O Que Dizem os Nossos <em>Clientes</em></h2>
+    </div>
+  </div>
+  <div style="overflow:hidden;padding:10px 0">
+    <div class="testimonials-track">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"A Converta transformou completamente a nossa gestão de RH. O processo de recrutamento ficou muito mais eficiente e encontrámos os profissionais certos rapidamente."</p>
+        <div class="testimonial-author"><div class="author-avatar">AM</div><div><div class="author-name">Ana Mendonça</div><div class="author-role">CEO — Empresa de Construção</div></div></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"O suporte jurídico em direito laboral foi fundamental para regularizarmos toda a nossa documentação. Equipa extremamente competente e responsável."</p>
+        <div class="testimonial-author"><div class="author-avatar">RP</div><div><div class="author-name">Ricardo Pereira</div><div class="author-role">Director Geral — Importadora</div></div></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Recomendo a Converta a qualquer empresa que queira estruturar o seu departamento de recursos humanos de forma profissional e juridicamente segura."</p>
+        <div class="testimonial-author"><div class="author-avatar">FC</div><div><div class="author-name">Fernanda Cardoso</div><div class="author-role">Directora de Operações — ONG</div></div></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Excelente consultoria! Ajudaram-nos a implementar políticas de RH alinhadas com a legislação angolana. Profissionalismo e dedicação em cada etapa do processo."</p>
+        <div class="testimonial-author"><div class="author-avatar">MK</div><div><div class="author-name">Mário Kaoneka</div><div class="author-role">Sócio-Gerente — Escritório de Engenharia</div></div></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"O acompanhamento durante o processo de reestruturação organizacional foi impecável. A Converta mostrou-se um verdadeiro parceiro estratégico."</p>
+        <div class="testimonial-author"><div class="author-avatar">LS</div><div><div class="author-name">Luisa Santos</div><div class="author-role">CFO — Empresa de Logística</div></div></div>
+      </div>
+      <!-- Duplicate for infinite loop -->
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"A Converta transformou completamente a nossa gestão de RH. O processo de recrutamento ficou muito mais eficiente e encontrámos os profissionais certos rapidamente."</p>
+        <div class="testimonial-author"><div class="author-avatar">AM</div><div><div class="author-name">Ana Mendonça</div><div class="author-role">CEO — Empresa de Construção</div></div></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"O suporte jurídico em direito laboral foi fundamental para regularizarmos toda a nossa documentação. Equipa extremamente competente e responsável."</p>
+        <div class="testimonial-author"><div class="author-avatar">RP</div><div><div class="author-name">Ricardo Pereira</div><div class="author-role">Director Geral — Importadora</div></div></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Recomendo a Converta a qualquer empresa que queira estruturar o seu departamento de recursos humanos de forma profissional e juridicamente segura."</p>
+        <div class="testimonial-author"><div class="author-avatar">FC</div><div><div class="author-name">Fernanda Cardoso</div><div class="author-role">Directora de Operações — ONG</div></div></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Excelente consultoria! Ajudaram-nos a implementar políticas de RH alinhadas com a legislação angolana. Profissionalismo e dedicação em cada etapa do processo."</p>
+        <div class="testimonial-author"><div class="author-avatar">MK</div><div><div class="author-name">Mário Kaoneka</div><div class="author-role">Sócio-Gerente — Escritório de Engenharia</div></div></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"O acompanhamento durante o processo de reestruturação organizacional foi impecável. A Converta mostrou-se um verdadeiro parceiro estratégico."</p>
+        <div class="testimonial-author"><div class="author-avatar">LS</div><div><div class="author-name">Luisa Santos</div><div class="author-role">CFO — Empresa de Logística</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="section numbers-section">
+  <div class="container">
+    <div style="text-align:center;max-width:600px;margin:0 auto;">
+      <div class="section-label reveal" style="justify-content:center">Converta em Números</div>
+      <h2 class="section-title reveal delay-1" style="text-align:center">Resultados que <em>Falam</em> por Si</h2>
+    </div>
+    <div class="numbers-grid reveal delay-2">
+      <div class="number-item"><div class="number-val">200<sup>+</sup></div><div class="number-label">Clientes Atendidos</div></div>
+      <div class="number-item"><div class="number-val">98<sup>%</sup></div><div class="number-label">Satisfação dos Clientes</div></div>
+      <div class="number-item"><div class="number-val">500<sup>+</sup></div><div class="number-label">Processos de RH</div></div>
+      <div class="number-item"><div class="number-val">10<sup>+</sup></div><div class="number-label">Anos de Experiência</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <div class="cta-strip-inner">
+    <div class="cta-strip-text reveal">
+      <div class="cta-title">Pronto para transformar a sua empresa?</div>
+      <div class="cta-sub">Agende uma consulta gratuita e descubra como podemos ajudá-lo.</div>
+    </div>
+    <a href="contactos.html" class="btn btn-dark reveal delay-2">
+      Agendar Consulta Gratuita
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand-name">CONVER<span>TA</span></div>
+        <div class="brand-tagline">Consultoria em RH & Advocacia</div>
+        <p class="footer-brand-text">Transformamos a gestão de pessoas e os processos jurídicos em vantagem competitiva para a sua empresa. Números e Pessoas — a nossa razão de ser.</p>
+        <div class="footer-socials">
+          <div class="social-btn" title="LinkedIn">in</div>
+          <div class="social-btn" title="Facebook">f</div>
+          <div class="social-btn" title="Instagram">ig</div>
+          <div class="social-btn" title="WhatsApp">w</div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegação</div>
+        <div class="footer-links">
+          <a class="footer-link" href="index.html">Início</a>
+          <a class="footer-link" href="servicos.html">Serviços</a>
+          <a class="footer-link" href="quem-somos.html">Quem Somos</a>
+          <a class="footer-link" href="contactos.html">Contactos</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Serviços</div>
+        <div class="footer-links">
+          <a class="footer-link" href="servicos.html">Gestão de RH</a>
+          <a class="footer-link" href="servicos.html">Recrutamento</a>
+          <a class="footer-link" href="servicos.html">Advocacia</a>
+          <a class="footer-link" href="servicos.html">Direito Laboral</a>
+          <a class="footer-link" href="servicos.html">Consultoria</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <div class="footer-contact-item"><span>📍</span><span>Luanda, Angola</span></div>
+        <div class="footer-contact-item"><span>📞</span><span>+244 900 000 000</span></div>
+        <div class="footer-contact-item"><span>✉️</span><span>geral@converta.ao</span></div>
+        <div class="footer-contact-item"><span>🕐</span><span>Seg–Sex: 08:00–17:30</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Converta — Consultoria em Recursos Humanos & Advocacia. Todos os direitos reservados.</div>
+      <div class="footer-legal">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Aviso Legal</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
