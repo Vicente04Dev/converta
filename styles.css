@@ -737,6 +737,8 @@ nav { display: flex; align-items: center; gap: 4px; }
 .page-hero {
   background: var(--navy-dark);
   padding: 100px 5% 108px;
+  position: relative;
+  overflow: hidden;
 }
 .page-hero--image {
   background-size: cover !important;
